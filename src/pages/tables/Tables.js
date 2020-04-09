@@ -11,7 +11,7 @@ import Table from "../dashboard/components/Table/Table";
 import mock from "../dashboard/mock";
 
 const datatableData = [
-  ["Joe James", "Example Inc.", "Yonkers", "NY"],
+  ["Stephen VanWingerden", "Silver Fern Group LLC", "Lexington", "KY"],
   ["John Walsh", "Example Inc.", "Hartford", "CT"],
   ["Bob Herm", "Example Inc.", "Tampa", "FL"],
   ["James Houston", "Example Inc.", "Dallas", "TX"],
