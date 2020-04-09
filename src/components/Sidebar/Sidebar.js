@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Drawer, IconButton, List } from "@material-ui/core";
 import {
-  Home as HomeIcon,
+  Dashboard as DashboardIcon,
   NotificationsNone as NotificationsIcon,
   FormatSize as TypographyIcon,
   FilterNone as UIElementsIcon,
   BorderAll as TableIcon,
-  QuestionAnswer as SupportIcon,
-  LibraryBooks as LibraryIcon,
+  LocalFlorist as FlowerIcon,
+  EditLocation as LocationIcon,
   HelpOutline as FAQIcon,
   ArrowBack as ArrowBackIcon,
 } from "@material-ui/icons";
@@ -30,7 +30,12 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
-  { id: 0, label: "Dashboard", link: "/app/dashboard", icon: <HomeIcon /> },
+  {
+    id: 0,
+    label: "Dashboard",
+    link: "/app/dashboard",
+    icon: <DashboardIcon />,
+  },
   {
     id: 1,
     label: "Typography",
@@ -56,9 +61,9 @@ const structure = [
     ],
   },
   { id: 5, type: "divider" },
-  { id: 6, type: "title", label: "HELP" },
-  { id: 7, label: "Library", link: "", icon: <LibraryIcon /> },
-  { id: 8, label: "Support", link: "", icon: <SupportIcon /> },
+  { id: 6, type: "title", label: "MAINTENANCE" },
+  { id: 7, label: "Locations", link: "/app/locations", icon: <LocationIcon /> },
+  { id: 8, label: "Items", link: "/app/items", icon: <FlowerIcon /> },
   { id: 9, label: "FAQ", link: "", icon: <FAQIcon /> },
   { id: 10, type: "divider" },
   { id: 11, type: "title", label: "PROJECTS" },

@@ -20,7 +20,7 @@ export default function TypographyPage() {
           <Widget title="Headings" disableWidgetMenu>
             <div className={classes.dashedBorder}>
               <Typography variant="h1" className={classes.text}>
-                h1. Heading
+                h1. HEADER 1
               </Typography>
               <Typography variant="h2" className={classes.text}>
                 h2. Heading
