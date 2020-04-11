@@ -48,7 +48,7 @@ export default function BigStat(props) {
       <div className={classes.totalValueContainer}>
         <div className={classes.totalValue}>
           <Typography size="xxl" color="text" colorBrightness="secondary">
-            {total[value]}
+            ${total[value]}
           </Typography>
           <Typography color={total.percent.profit ? "success" : "secondary"}>
             &nbsp;{total.percent.profit ? "+" : "-"}
@@ -75,7 +75,7 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Registrations
+            Shipments
           </Typography>
         </div>
         <div className={classes.statCell}>
@@ -88,7 +88,7 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Bounce Rate
+            YTD Comp
           </Typography>
         </div>
         <div className={classnames(classes.statCell, classes.borderRight)}>
@@ -103,7 +103,7 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Views
+            WOH
           </Typography>
         </div>
       </div>

@@ -11,9 +11,9 @@ import {
 import { Button } from "../../../../components/Wrappers";
 
 const states = {
-  sent: "success",
-  pending: "warning",
-  declined: "secondary",
+  positive: "success",
+  negative: "warning",
+  neutral: "secondary",
 };
 
 export default function TableComponent({ data }) {
@@ -30,14 +30,11 @@ export default function TableComponent({ data }) {
         </TableRow>
       </TableHead>
       <TableBody>
-        {data.map(({ id, name, email, product, price, date, city, status }) => (
+        {data.map(({ id, name, sales, comp, status }) => (
           <TableRow key={id}>
             <TableCell className="pl-3 fw-normal">{name}</TableCell>
-            <TableCell>{email}</TableCell>
-            <TableCell>{product}</TableCell>
-            <TableCell>{price}</TableCell>
-            <TableCell>{date}</TableCell>
-            <TableCell>{city}</TableCell>
+            <TableCell>{sales}</TableCell>
+            <TableCell>{comp}</TableCell>
             <TableCell>
               <Button
                 color={states[status.toLowerCase()]}
